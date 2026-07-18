@@ -119,15 +119,6 @@ function showMenuDialog()
         layout_height = "fill",
         padding = "16dp",
         {
-            TextView,
-            text = "More Options",
-            layout_width = "fill",
-            layout_height = "wrap",
-            gravity = "center",
-            textSize = 20,
-            padding = "12dp",
-        },
-        {
             Button,
             text = "Settings",
             layout_width = "fill",
@@ -160,8 +151,7 @@ function showMenuDialog()
     }
     menuDlg = LuaDialog(this)
     menuDlg.View = loadlayout(menuLayout)
-    menuDlg.setTitle("More Options")
-    menuDlg.setButton("Close", nil)
+    menuDlg.setTitle("")
     menuDlg.show()
 end
 
@@ -221,15 +211,6 @@ function showSettingsDialog()
         layout_width = "fill",
         layout_height = "fill",
         padding = "16dp",
-        {
-            TextView,
-            text = "Settings",
-            layout_width = "fill",
-            layout_height = "wrap",
-            gravity = "center",
-            textSize = 20,
-            padding = "16dp",
-        },
         {
             LinearLayout,
             orientation = "horizontal",
